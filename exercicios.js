@@ -114,4 +114,55 @@ for(i = 0; i <= valores.length; i++){
     console.log(soma1,"\n");
 }
 
+console.log("Exercicio 14")
+let numeros = [13, 20, 2, 75, 53], maior = 0;
 
+for (let i = 0; i < numeros.length; i++) {
+    if (maior < numeros[i]) {
+        maior = numeros[i];
+    }
+}
+console.log(maior, "\n");
+
+console.log("Exercicio 15")
+let numeros2 = [22, 44, 1, 93, 10], menor = 99;
+
+for (let i = 0; i < numeros2.length; i++) {
+    if (menor > numeros2[i]) {
+        menor = numeros2[i];
+    }
+}
+console.log(menor, "\n");
+
+console.log("Exercicio 16")
+let n = 5 , resultado = 1
+for (let i = 1; i <= n; i++ ){
+    resultado = resultado *  i
+}
+    console.log(resultado,"\n");
+
+console.log("Exercicio 17")
+let numeros3 = [1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10]
+for (let i = 0; i <= numeros3.length; i++){
+    if (numeros3[i] % 2 === 0){
+        console.log(numeros3[i], "é par\n");
+    }else{
+        console.log(numeros3[i], "é impar\n");
+    }
+}
+
+console.log("Exercicio 18")
+let texto = "cristiano ronaldo é foda", contagem = 0, vogais = ["a","e","i","o","u"]
+for (i = 0; i < texto.length; i++){
+    if(vogais.includes(texto[i])){
+        contagem++
+    }
+}
+    console.log(contagem, "\n");
+
+console.log("Exercicio 19")
+let texto2 = "foda-se a administração" , resultado2 = ""
+for (i = texto2.length - 1; i >= 0; i--){
+    resultado2 += texto2[i]
+}
+    console.log("testo invertido:", resultado2);
